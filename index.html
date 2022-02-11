@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- <div class="container">
+
+    </div>
+    
+    <script>
+        const container = document.querySelector('.container');
+        // container.style.color = 'red'
+        container.addEventListener('mouseover', ()=>{
+            container.style.backgroundColor = 'green';
+            
+        });
+        container.addEventListener('mouseout', ()=>{
+            container.style.backgroundColor = '  transparent';
+        })
+    </script> -->
+
+
+
+
+
+
+
+
+
+
+    
+<!-- 
+    <input id="add-item-btn" type="button" value="+">
+
+    <div class="conteiner">
+
+    </div>
+
+    <script>
+            const conteiner = document.querySelector(".conteiner");
+            const result = function(event){
+                const tasj  = document.createElement("div");
+                tasj.innerHTML = "element"
+                conteiner.append(tasj);
+        
+        }
+        const btn = document.getElementById("add-item-btn");
+
+        btn.addEventListener("click", () =>{
+            result();
+            })
+
+    </script> -->
+
+
+
+
+
+    
+
+    <!-- <div class="container">
+        <div class="block">
+        </input id="add-btn" type="button" >
+        </div>
+    </div>  
+
+
+    <script>
+        const result = function () {
+        const container = document.querySelector('.container');
+        const block = document.querySelector('.block')
+        const cord  = document.createElement('p');
+            cord.innerHTML = 'Оставить заявку';
+        const box = document.createElement('input');
+        const times = document.createElement('button');
+   
+
+        container.style.backgroundColor = 'grey'  ;
+        container.style.width = '50%';
+        container.style.height = '400px';
+        block.style.backgroundColor = 'red';
+        block.style.width = '80%';
+        block.style.height = '250px';
+        block.style.marginTop = '10%';
+        block.style.marginLeft = '10%'  ;
+        cord.style.marginLeft = '35%';
+        cord.style.padding = '100px 0';
+        box.style.display = 'Flex';
+        times.innerHTML = '&times;'
+        times.style.color = 'red'
+        times.style.position ='absolute'
+        times.style.right = '0'
+        times.style.top = '0'
+ 
+
+        container.append(cord);
+        block.append(cord);
+        cord.append(box);
+        container.append(times);
+        document.body.append(vu)
+        };
+        result();
+        
+    </script> -->
+
+
+   
+
+
+
+
+        <a id="start">Start</a> |
+    
+        <a id="stop">Stop</a>
+        <div id="container">
+            
+        </div>
+    
+        <script>
+            const conteiner = document.getElementById("container")
+            const satrt = document.getElementById("start");
+            const finish = document.getElementById("stop")
+    
+            satrt.style.cursor ='pointer ';
+            finish.style.cursor ='pointer ';
+    
+            
+    
+            const rondomWords = () => Math.floor(Math.random() * 20 + 1);
+    
+               const boss = function (){
+                 const task = document.createElement("div")
+                 task.className = "element"
+                 task.innerHTML = rondomWords();
+                 conteiner.append(task);
+               }
+    
+               const shoeMessage = () =>{
+                   const time = setInterval (boss, 3000);
+                   finish.addEventListener( "click", ()=>{
+                      clearInterval (time);
+                   });
+               }
+                satrt.addEventListener( "click", () => {
+                    shoeMessage();
+    
+               } );
+            
+    
+        </script>
+
+</body>
+</html>
+
+
+
+
+
+
